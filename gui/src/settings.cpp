@@ -40,7 +40,9 @@ static const QMap<ChiakiVideoResolutionPreset, QString> resolutions = {
 	{ CHIAKI_VIDEO_RESOLUTION_PRESET_360p, "360p"},
 	{ CHIAKI_VIDEO_RESOLUTION_PRESET_540p, "540p"},
 	{ CHIAKI_VIDEO_RESOLUTION_PRESET_720p, "720p"},
-	{ CHIAKI_VIDEO_RESOLUTION_PRESET_1080p, "1080p"}
+	{ CHIAKI_VIDEO_RESOLUTION_PRESET_1080p, "1080p"},
+	{ CHIAKI_VIDEO_RESOLUTION_PRESET_1440p, "1440p"},
+	{ CHIAKI_VIDEO_RESOLUTION_PRESET_2160p, "2160p"}
 };
 
 static const ChiakiVideoResolutionPreset resolution_default = CHIAKI_VIDEO_RESOLUTION_PRESET_720p;
@@ -58,7 +60,10 @@ void Settings::SetResolution(ChiakiVideoResolutionPreset resolution)
 
 static const QMap<ChiakiVideoFPSPreset, int> fps_values = {
 	{ CHIAKI_VIDEO_FPS_PRESET_30, 30 },
-	{ CHIAKI_VIDEO_FPS_PRESET_60, 60 }
+	{ CHIAKI_VIDEO_FPS_PRESET_60, 60 },
+	{ CHIAKI_VIDEO_FPS_PRESET_90, 90 },
+	{ CHIAKI_VIDEO_FPS_PRESET_120, 120 },
+	
 };
 
 static const ChiakiVideoFPSPreset fps_default = CHIAKI_VIDEO_FPS_PRESET_60;
